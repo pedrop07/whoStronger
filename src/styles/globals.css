@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 14.9%;
+ 
+    --primary: 25 95% 53%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 264 77% 55%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 55.1%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+  }
+
+  .dark {
+    --background: 210 3% 10%;
+    --foreground: 0 0% 98%;
+ 
+    --primary: 30 95% 53%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 258 100% 70%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 77.1%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  p {
+    @apply text-foreground
+  }
+  
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+}
+ 
