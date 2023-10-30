@@ -5,13 +5,13 @@ import {
   CardBody,
   Typography,
   CardFooter,
-  Button,
 } from '@material-tailwind/react';
 import Image from 'next/image';
 import clsx from 'clsx';
 import { useHeroesStore } from '@/store/HeroesStore';
 import toast from 'react-hot-toast';
 import { Hero, Fighter } from '@/types';
+import { Button } from '../atoms/Button';
 
 interface Props {
   hero: Hero;
