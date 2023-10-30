@@ -19,7 +19,7 @@ export async function getHeroes({
     console.error(
       'A variável apiURL não está definida. Certifique-se de configurá-la corretamente.',
     );
-    return [];
+    throw new Error('Internal server error');
   }
 
   const res = await fetch(apiURL);
@@ -40,5 +40,6 @@ export async function getHeroes({
     return heroes;
   }
 
-  return [];
+  console.error('getHeroes falhou ao tentar buscar os heróis.');
+  throw new Error('Internal server error');
 }
