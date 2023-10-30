@@ -109,10 +109,10 @@ export function BattleResultModal({ openModal, handleOpenModal }: Props) {
   function ModalBody() {
     if (loadingBattle < 3) {
       return (
-        <div className="mx-auto">
+        <div className="mx-auto max-w-[300px] w-full aspect-square">
           <Player
             src="/lottie/battle.json"
-            className="max-w-[300px] h-full w-full"
+            className="h-full w-full"
             autoplay
             loop
           />
