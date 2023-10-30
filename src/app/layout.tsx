@@ -11,6 +11,19 @@ export const metadata: Metadata = {
   title: 'whoStronger',
   description:
     'Explore uma lista de heróis e crie batalhas para descobrir quem é o mais forte!',
+  openGraph: {
+    type: 'website',
+    title: 'whoStronger',
+    description:
+      'Explore uma lista de heróis e crie batalhas para descobrir quem é o mais forte!',
+    url: 'https://who-stronger.vercel.app',
+    images: [
+      {
+        alt: 'whoStronger',
+        url: '/open-graph.png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
