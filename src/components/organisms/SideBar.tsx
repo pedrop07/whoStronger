@@ -26,6 +26,9 @@ export function SideBar() {
       open={showMenu}
       overlay={showOverlay}
       onClose={handleCloseOnMobile}
+      overlayProps={{
+        className: 'fixed',
+      }}
     >
       <FilterHeroesForm />
       <HeroesBattle />
